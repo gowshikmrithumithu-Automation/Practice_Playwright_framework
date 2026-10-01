@@ -1,0 +1,23 @@
+{
+  "name": "automation_excercise_framework_practice",
+  "version": "1.0.0",
+  "description": "\"# Practice_Playwright_framework\"",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gowshikmrithumithu-Automation/Practice_Playwright_framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gowshikmrithumithu-Automation/Practice_Playwright_framework/issues"
+  },
+  "homepage": "https://github.com/gowshikmrithumithu-Automation/Practice_Playwright_framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3"
+  }
+}
