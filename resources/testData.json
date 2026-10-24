@@ -1,0 +1,15 @@
+{
+    "TestDataCredentials": {
+        "InvalidUserName": "abc123@gmail.com",
+        "InvalidPassword": "randy@123"
+    },
+    "BaseUrl": {
+        "automation_practiceBaseUrl": "https://www.automationexercise.com/login"
+    },
+    "Locators": {
+        "Login-Email": "//input[@data-qa='login-email']",
+        "Login-Password": "//input[@data-qa='login-password']",
+        "Home-loginPage": "(//li//parent::ul)[1]",
+        "Invalid-Login": "//p[contains(text(),'Your')]"
+    }
+}
