@@ -1,10 +1,9 @@
 //---------------------------------------------------------------------------------------------------------------------------------
 
 import test, { request } from "@playwright/test";
-
-import data from "../test-data/user_details.json";
-import { HomePage } from "../Pages/Home_Page";
-import { createUser } from "../Utilities/API_Utils";
+import data from "../../test-data/user_details.json";
+import { HomePage } from "../../Pages/Home_Page";
+import { createUser } from "../../Utilities/API_Utils";
 
 test("TestCase-01-CustomerRegistration", async ({ page, request }) => {
 

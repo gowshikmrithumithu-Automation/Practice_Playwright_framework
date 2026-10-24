@@ -7,11 +7,13 @@ export class HomePage {
     registerLink: Locator;
     registerBtn: Locator;
 
+
     constructor(page: Page) {
         this.page = page;
         this.signIn = page.getByRole("link", { name: "Sign in" });
         this.registerLink = page.getByRole("link", { name: "Register your account" });
         this.registerBtn = page.getByRole("button", { name: "Register" });
+
     }
 
     async clickSignIn() {
@@ -29,8 +31,6 @@ export class HomePage {
         await expect(this.page.getByRole("heading", { name: "Customer registration" })).toBeVisible();
 
         await this.registerBtn.click();
-
-
 
     }
 }

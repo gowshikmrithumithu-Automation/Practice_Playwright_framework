@@ -1,0 +1,26 @@
+import { test as base } from '@playwright/test';
+import { LoginPage } from '../Pages/Login_Page';
+import data from '../test-data/user_details.json';
+
+// Declare the types of your fixtures.
+type MyFixtures = {
+    LoginPage: LoginPage;
+};
+
+// Extend base test by providing "todoPage" and "settingsPage".
+// This new "test" can be used in multiple test files, and each of them will get the fixtures.
+export const test = base.extend<MyFixtures>({
+    LoginPage: async ({ page }, use) => {
+        // Set up the fixture.
+
+        const loginpage = new LoginPage(page);
+        await page.goto(data.appUrl.domain);
+        await loginpage.toolshopLogin(data.accountCredentials.bothValid.email, data.accountCredentials.bothValid.password);
+
+        // Use the fixture value in the test.
+        await use(loginpage);
+
+    },
+
+});
+export { expect } from '@playwright/test';
