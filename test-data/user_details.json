@@ -1,0 +1,19 @@
+{
+    "appUrl": {
+        "domain": "https://practicesoftwaretesting.com/"
+    },
+    "customer_detail_entry": {
+        "first_name": "vasudevan",
+        "last_name": "Kumaran",
+        "dob": "1960-01-01",
+        "country": "IN",
+        "postal_code": "CHN 005",
+        "house_number": "19",
+        "street": "Main Street",
+        "city": "Chennai",
+        "state": "Tamilnadu",
+        "phone": "0987456123",
+        "email": "vasudev60@gmail.com",
+        "passWord": "Vasu_dev!1265"
+    }
+}
