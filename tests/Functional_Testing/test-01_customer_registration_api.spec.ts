@@ -2,15 +2,15 @@
 
 import test, { request } from "@playwright/test";
 import data from "../../test-data/user_details.json";
-import { HomePage } from "../../Pages/Home_Page";
+import { Base_Page } from "../../Pages/Base_Page";
 import { createUser } from "../../Utilities/API_Utils";
 
 test("TestCase-01-CustomerRegistration", async ({ page, request }) => {
 
-    const home_page = new HomePage(page);
+    const base_page = new Base_Page(page);
 
     await page.goto(data.appUrl.domain);
-    await home_page.toolshopSignUp();
+    await base_page.toolshopSignUp();
 
     await createUser(request, data.customer_detail_entry.first_name, data.customer_detail_entry.last_name, data.customer_detail_entry.dob,
         data.customer_detail_entry.country, data.customer_detail_entry.postal_code, data.customer_detail_entry.house_number,
