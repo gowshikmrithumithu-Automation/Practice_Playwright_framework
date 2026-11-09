@@ -1,7 +1,6 @@
 import { APIRequestContext, expect, request } from "@playwright/test";
 
-export async function createUser(request: APIRequestContext, firstname: string, lastname: string, dob: string, country: string, postalcode: string, housenum: string,
-    street: string, city: string, state: string, phone: string, email: string, password: string) {
+export async function createUser(request: APIRequestContext, customer_details: any) {
 
     const apiResponse = await request.post("https://api.practicesoftwaretesting.com/users/register", {
 
@@ -9,20 +8,20 @@ export async function createUser(request: APIRequestContext, firstname: string, 
             "Content-type": "application/json"
         },
         data: {
-            "first_name": firstname,
-            "last_name": lastname,
+            "first_name": customer_details.first_name,
+            "last_name": customer_details.last_name,
             "address": {
-                "street": street,
-                "house_number": housenum,
-                "city": city,
-                "state": state,
-                "country": country,
-                "postal_code": postalcode
+                "street": customer_details.street,
+                "house_number": customer_details.house_number,
+                "city": customer_details.city,
+                "state": customer_details.state,
+                "country": customer_details.country,
+                "postal_code": customer_details.postal_code
             },
-            "phone": phone,
-            "dob": dob,
-            "password": password,
-            "email": email
+            "phone": customer_details.phone,
+            "dob": customer_details.dob,
+            "password": customer_details.password,
+            "email": customer_details.email
         }
 
     });

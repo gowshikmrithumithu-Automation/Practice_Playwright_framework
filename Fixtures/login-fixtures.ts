@@ -13,12 +13,12 @@ export const test = base.extend<MyFixtures>({
     LoginPage: async ({ page }, use) => {
         // Set up the fixture.
 
-        const loginpage = new LoginPage(page);
+        const loginPage = new LoginPage(page);
         await page.goto(data.appUrl.domain);
-        await loginpage.toolshopLogin(data.accountCredentials.bothValid.email, data.accountCredentials.bothValid.password);
+        await loginPage.toolshopLogin(data.accountCredentials.bothValid.email, data.accountCredentials.bothValid.password);
 
         // Use the fixture value in the test.
-        await use(loginpage);
+        await use(loginPage);
 
     },
 

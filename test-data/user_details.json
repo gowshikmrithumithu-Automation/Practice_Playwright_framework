@@ -3,18 +3,18 @@
         "domain": "https://practicesoftwaretesting.com/"
     },
     "customer_detail_entry": {
-        "first_name": "seiyon",
-        "last_name": "battha",
-        "dob": "1965-01-01",
+        "first_name": "Raayan",
+        "last_name": "Maayan",
+        "dob": "1963-01-01",
         "country": "IN",
-        "postal_code": "CHN 005",
-        "house_number": "18",
-        "street": "Main Street",
-        "city": "Trichy",
+        "postal_code": "CHN 006",
+        "house_number": "30",
+        "street": "Church Street",
+        "city": "Madurai",
         "state": "Tamilnadu",
-        "phone": "0987456123",
-        "email": "seiyon63@practicesoftwaretesting.com",
-        "passWord": "Seiyon!90"
+        "phone": "0984656123",
+        "email": "manuuGopu@practicesoftwaretesting.com",
+        "password": "Maiyon!91"
     },
     "accountCredentials": {
         "bothValid": {

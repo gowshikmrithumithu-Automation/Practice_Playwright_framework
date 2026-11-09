@@ -33,9 +33,9 @@ export class Base_Page {
     async toolshopSignUp() {
         await this.clickElement(this.signIn);
         await this.clickElement(this.registerLink);
+    }
 
-        await expect(this.page.getByRole("heading", { name: "Customer registration" })).toBeVisible();
-
+    async toolshopRegSubmit() {
         await this.clickElement(this.registerBtn);
 
     }
