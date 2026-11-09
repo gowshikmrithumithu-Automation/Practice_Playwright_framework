@@ -23,7 +23,7 @@ export class Base_Page {
         this.homeMenu = page.getByRole("menuitem", { name: "Home" });
 
 
-    }
+      }
 
     async clickElement(element: Locator) {
         await element.click();
@@ -39,4 +39,7 @@ export class Base_Page {
         await this.clickElement(this.registerBtn);
 
     }
+
+
+
 }

@@ -9,7 +9,7 @@ test.describe('1.Valid Login-Scenario', () => {
 
 
     test('TestCase-01-Customer_Login-Vaild-email & Password', async ({ page, LoginPage }) => {
-        await expect(page.locator("#menu")).toHaveText("John Doe");
+        await expect(page.locator("//button[@data-test='nav-menu']")).toHaveText("John Doe");
 
     });
 
