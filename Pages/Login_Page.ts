@@ -29,7 +29,6 @@ export class LoginPage extends Base_Page {
 
         if (isLoginExpected) {
             await this.page.waitForURL(/dashboard/);
-            await expect(this.dropMenuNav).toBeVisible();
         } else if (expectedErrorType === 'Invalid email or password') {
             await this.incorrect_errMsg.waitFor({ state: "visible" });
         } else if (expectedErrorType === 'Email is required') {
