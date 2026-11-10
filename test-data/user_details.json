@@ -5,7 +5,7 @@
     "customer_detail_entry": {
         "first_name": "Muthuvel",
         "last_name": "Pandian",
-        "dob": "1931-12-12",
+        "dob": "1931-02-02",
         "country": "IN",
         "postal_code": "CHN 004",
         "house_number": "56",
@@ -14,7 +14,7 @@
         "state": "Tamilnadu",
         "phone": "093214567",
         "email": "muthuvel12@practicesoftwaretesting.com",
-        "password": "Bothi!92"
+        "password": "Maiyos!9"
     },
     "accountCredentials": {
         "bothValid": {

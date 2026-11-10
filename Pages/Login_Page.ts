@@ -44,5 +44,5 @@ export class LoginPage extends Base_Page {
     //     await this.signOut.click();
 
 
-    }
+}
 
