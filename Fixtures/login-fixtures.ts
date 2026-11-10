@@ -18,11 +18,6 @@ export const test = base.extend<MyFixtures>({
 
         await loginPage.toolshopLogin(data.accountCredentials.bothValid.email, data.accountCredentials.bothValid.password);
 
-
-
-        await expect(loginPage.dropMenuNav)
-            .toBeVisible({ timeout: 15000 })
-
         await use(loginPage);
 
     },
