@@ -5,29 +5,31 @@
     "customer_detail_entry": {
         "first_name": "Muthuvel",
         "last_name": "Pandian",
-        "dob": "1931-02-02",
-        "country": "IN",
-        "postal_code": "CHN 004",
-        "house_number": "56",
-        "street": "French Street",
-        "city": "Chennai",
-        "state": "Tamilnadu",
-        "phone": "093214567",
-        "email": "muthuvel12@practicesoftwaretesting.com",
-        "password": "Maiyos!9"
-    },
-    "accountCredentials": {
-        "bothValid": {
-            "email": "admin@practicesoftwaretesting.com",
-            "password": "welcome01"
+        "dob": "1998-02-02",
+        "address": {
+            "country": "IN",
+            "postal_code": "CHN 004",
+            "house_number": "56",
+            "street": "French Street",
+            "city": "Chennai",
+            "state": "Tamilnadu",
+            "phone": "093214567",
+            "email": "muthuvel12@practicesoftwaretesting.com",
+            "password": "Maiyos!9"
         },
-        "invalidEmail": {
-            "email": "atmosphere@practicesoftwaretesting.com",
-            "password": "welcome01"
-        },
-        "invalidPassword": {
-            "email": "admin@practicesoftwaretesting.com",
-            "password": "atmosphere_01"
+        "accountCredentials": {
+            "bothValid": {
+                "email": "admin@practicesoftwaretesting.com",
+                "password": "welcome01"
+            },
+            "invalidEmail": {
+                "email": "atmosphere@practicesoftwaretesting.com",
+                "password": "welcome01"
+            },
+            "invalidPassword": {
+                "email": "admin@practicesoftwaretesting.com",
+                "password": "atmosphere_01"
+            }
         }
     }
 }
