@@ -1,4 +1,4 @@
-import { test as base } from '@playwright/test';
+import { test as base, expect } from '@playwright/test';
 import { LoginPage } from '../Pages/Login_Page';
 import data from '../test-data/user_details.json';
 
@@ -15,9 +15,12 @@ export const test = base.extend<MyFixtures>({
 
         const loginPage = new LoginPage(page);
         await page.goto(data.appUrl.domain);
+
         await loginPage.toolshopLogin(data.accountCredentials.bothValid.email, data.accountCredentials.bothValid.password);
 
-        // Use the fixture value in the test.
+        await expect(loginPage.dropMenuNav)
+            .toHaveText("John Doe");
+
         await use(loginPage);
 
     },
