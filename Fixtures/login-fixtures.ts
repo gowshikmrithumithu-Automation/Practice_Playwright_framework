@@ -16,7 +16,8 @@ export const test = base.extend<MyFixtures>({
         const loginPage = new LoginPage(page);
         await page.goto(data.appUrl.domain);
 
-        await loginPage.toolshopLogin(data.accountCredentials.bothValid.email, data.accountCredentials.bothValid.password);
+        await loginPage.toolshopLogin(data.customer_detail_entry.accountCredentials.bothValid.email,
+            data.customer_detail_entry.accountCredentials.bothValid.password);
 
         await use(loginPage);
 
