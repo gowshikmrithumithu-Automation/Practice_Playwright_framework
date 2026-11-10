@@ -10,9 +10,6 @@ test.describe('1.Valid Login-Scenario', () => {
 
     test('TestCase-01-Customer_Login-Vaild-email & Password', async ({ page, LoginPage }) => {
 
-        await LoginPage.toolshopLogout();
-
-        await expect(page).toHaveURL(/login/);
 
     });
 

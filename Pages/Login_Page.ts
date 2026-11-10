@@ -39,11 +39,10 @@ export class LoginPage extends Base_Page {
     }
 
 
-    async toolshopLogout() {
-        await this.dropMenuNav.click();
-        await this.signOut.click();
+    // async toolshopLogout() {
+    //     await this.dropMenuNav.click();
+    //     await this.signOut.click();
 
 
     }
 
-}
