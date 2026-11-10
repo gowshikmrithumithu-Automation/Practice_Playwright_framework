@@ -9,8 +9,8 @@ test.describe('1.Valid Login-Scenario', () => {
 
 
     test('TestCase-01-Customer_Login-Vaild-email & Password', async ({ page, LoginPage }) => {
-        await expect(page.locator("//button[@data-test='nav-menu']")).toHaveText("John Doe");
-
+        await expect(page.locator("[data-test='nav-menu']")).toHaveText("John Doe");
+        
         await LoginPage.toolshopLogout();
 
         await expect(page).toHaveURL(/login/);

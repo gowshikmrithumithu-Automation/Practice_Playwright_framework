@@ -16,7 +16,7 @@ export class Base_Page {
         this.page = page;
         this.signIn = page.getByRole("link", { name: "Sign in" });
         this.login = page.getByRole("button", { name: "Login" });
-        this.dropMenuNav = page.locator("//button[@data-test='nav-menu']");
+        this.dropMenuNav = page.locator("[data-test='nav-menu']");
         this.signOut = page.locator("//a[@data-test='nav-sign-out']/parent::li");
         this.registerLink = page.getByRole("link", { name: "Register your account" });
         this.registerBtn = page.getByRole("button", { name: "Register" });
