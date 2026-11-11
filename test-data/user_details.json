@@ -4,10 +4,10 @@
     },
     "customer_detail_entry": {
         "first_name": "Vishal",
-        "last_name": "Gopinathan",
+        "last_name": "Vadivu",
         "address": {
-            "street": "Street 4",
-            "house_number": "30",
+            "street": "Street 9",
+            "house_number": "31",
             "city": "Karur",
             "state": "Tamilnadu",
             "country": "IN",
@@ -15,8 +15,8 @@
         },
         "phone": "9487654321",
         "dob": "1970-02-03",
-        "password": "Vishal!9",
-        "email": "vishal_gopi23@practicesoftwaretesting.com"
+        "password": "Vishalvadi!9",
+        "email": "vishal_vadivu23@practicesoftwaretesting.com"
     },
     "accountCredentials": {
         "bothValid": {
