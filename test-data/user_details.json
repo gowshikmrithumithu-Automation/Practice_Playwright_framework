@@ -3,20 +3,20 @@
         "domain": "https://practicesoftwaretesting.com/"
     },
     "customer_detail_entry": {
-        "first_name": "Arjunan",
-        "last_name": "Saminathan",
+        "first_name": "Vishal",
+        "last_name": "Gopinathan",
         "address": {
-            "street": "Street 6",
-            "house_number": "19",
-            "city": "Chennai",
+            "street": "Street 4",
+            "house_number": "30",
+            "city": "Karur",
             "state": "Tamilnadu",
             "country": "IN",
-            "postal_code": "1234CC"
+            "postal_code": "1324CC"
         },
-        "phone": "9487654320",
-        "dob": "1970-02-01",
-        "password": "Arjunan!9",
-        "email": "arjunan_sami26@practicesoftwaretesting.com"
+        "phone": "9487654321",
+        "dob": "1970-02-03",
+        "password": "Vishal!9",
+        "email": "vishal_gopi23@practicesoftwaretesting.com"
     },
     "accountCredentials": {
         "bothValid": {
