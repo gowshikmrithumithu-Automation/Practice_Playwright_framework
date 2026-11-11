@@ -10,7 +10,7 @@ test.describe('1.Valid Login-Scenario', () => {
 
     test('TestCase-01-Customer_Login-Vaild-email & Password', async ({ page, LoginPage }) => {
 
-
+        await expect(page.getByRole('heading', { name: 'Sales over the years' })).toContainText("Sales");
 
     });
 
