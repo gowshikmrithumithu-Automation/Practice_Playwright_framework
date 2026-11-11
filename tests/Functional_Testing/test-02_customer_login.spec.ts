@@ -28,8 +28,8 @@ test.describe('2.Invalid Login-Scenarios', () => {
 
         //Instance of the Login page class
         const loginPage = new LoginPage(page);
-        await loginPage.toolshopLogin(data.customer_detail_entry.accountCredentials.invalidEmail.email,
-            data.customer_detail_entry.accountCredentials.invalidPassword.password, false, "Invalid email or password");
+        await loginPage.toolshopLogin(data.accountCredentials.invalidEmail.email,
+            data.accountCredentials.invalidPassword.password, false, "Invalid email or password");
 
         await expect(loginPage.incorrect_errMsg).toContainText("Invalid");
 
@@ -45,7 +45,7 @@ test.describe('2.Invalid Login-Scenarios', () => {
 
     test('TestCase-03-Customer_login_emptyEmail', async ({ page }) => {
         const loginPage = new LoginPage(page);
-        await loginPage.toolshopLogin("", data.customer_detail_entry.accountCredentials.invalidPassword.password, false, "Email is required");
+        await loginPage.toolshopLogin("", data.accountCredentials.invalidPassword.password, false, "Email is required");
 
         //Verification
         await expect(loginPage.emailErrMsg).toContainText("required");
