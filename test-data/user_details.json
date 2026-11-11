@@ -13,7 +13,7 @@
             "country": "IN",
             "postal_code": "1324CC"
         },
-        "phone": "9487654321",
+        "phone": "9${String(timestamp).slice(-9)}",
         "dob": "1971-02-03",
         "password": "Welcome013#!",
         "email": "User_${Date.now()}@practicesoftwaretesting.com"
