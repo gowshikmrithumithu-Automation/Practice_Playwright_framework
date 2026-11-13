@@ -1,0 +1,26 @@
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
+import test, { expect, request } from "@playwright/test";
+import data from "../../test-data/user_details.json";
+import { Base_Page } from "../../Pages/Base_Page";
+import { createUser } from "../../Utilities/API_Utils";
+
+test("TestCase-01-CustomerRegistration", async ({ page, request }) => {
+
+    const base_page = new Base_Page(page);
+
+    await page.goto(data.appUrl.domain);
+    await base_page.toolshopSignUp();
+
+    //Verification to view the Customer registration.
+    await expect(page.getByRole("heading", { name: "Customer registration" })).toBeVisible();
+
+    await createUser(request, data.customer_detail_entry);
+    await base_page.toolshopRegSubmit();
+
+    await page.pause();
+
+});
+
+//----------------------------------------------------------------------------------------------------------------------------------
